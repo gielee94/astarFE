@@ -1,0 +1,40 @@
+.category-container {
+  width: 100%;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 32px;
+}
+
+.box {
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  padding: 16px;
+  flex: 0 0 40%; /* Change the flex-basis to a higher percentage */
+  max-width: 400px; /* Set a max-width to limit the box width */
+  height: 15vh;
+  box-sizing: border-box;
+}
+
+.box h3 {
+  margin: 0;
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+
+
+.box p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.hide {
+  display: none;
+}
