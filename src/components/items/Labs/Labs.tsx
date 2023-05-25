@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useSelector } from 'react-redux';
 import { AppState } from '../../redux/types';
 import './Labs.css';
-import loadingImage from './loading.gif';
+
 import { useNavigate } from 'react-router-dom';
 
 interface LabProp {
@@ -64,9 +64,9 @@ const Labs: React.FC = () => {
         >
           <p>
             {lab.provisioningState === 0 && lab.state === 0
-              ? (<div>"Creating" <img className = "loading-image" src = {loadingImage} /></div>)
+              ? (<div>"Creating" </div>)
               : lab.provisioningState === 1 && lab.state === 1
-                ? (<div>"Publishing" <img className = "loading-image" src = {loadingImage} /></div>)
+                ? (<div>"Publishing" </div>)
                 : null
             }
           </p>
